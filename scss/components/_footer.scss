@@ -1,0 +1,12 @@
+@import '../base/variables';
+
+.contain-footer{
+    background-color: $color1;
+    height: auto;
+
+        .style-footer{
+            text-decoration: none;
+            font-size: 25px;
+            color: $color3;
+        }
+}

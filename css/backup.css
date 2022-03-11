@@ -1,0 +1,258 @@
+/*------------------- SASS -------------------*/
+#presentacion {
+  width: 100%;
+  height: auto;
+  background-image: url(../multimedia/img12.jpg);
+  background-size: cover;
+}
+
+.contain-footer {
+  background-color: #171717;
+  height: 60px;
+}
+.contain-footer .style-footer {
+  text-decoration: none;
+  font-size: 25px;
+  color: #c3251d;
+}
+
+.description {
+  font-size: 17px solid #EDEDED;
+}
+
+.sass-bg-title {
+  width: 100%;
+  height: 111px;
+  background-color: #171717;
+}
+
+/*------------------- FIN DE SASS -------------------*/
+
+
+body{
+  /*background: linear-gradient(to bottom, #9b9b9b, #BF0000);*/
+  min-width: 100vh;
+  font-family: 'Big Shoulders Stencil Display' ,sans-serif !important;
+}
+
+
+/* ----------------- VARIABLES ----------------*/
+:root{
+  --fondoOscuro: #171717;
+  --fondoGris: #333;
+  --colorLinks: #c3251d;
+  --colorTextoNC: #EDEDED;
+  --secundaryTitlesFont: 40px;
+  
+}
+/* ----------------- FIN DE VARIABLES ---------*/
+
+
+/* ----------------- ETIQUETAS SOLAS ----------*/
+link{	
+  color: var(--colorLinks);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 800;
+  list-style: none;
+}
+
+/* ----------------- FIN DE ETIQUETAS SOLAS ----------*/
+
+
+/* ----------------- HEADER & NAV ------------------*/
+.rky{
+  color: var(--colorTextoNC);
+}
+
+.titulo{
+  color: var(--colorLinks);
+  text-decoration: none;
+  
+}
+
+.nav{
+  background-color: var(--fondoGris) ;
+}
+
+.border-button{
+  border: solid 3px var(--fondoOscuro);
+}
+
+.button-hamburger{
+  background-image: url(../multimedia/img51.png);
+}
+
+.scale{
+  transition: scale(all .1s ease-in-out);
+}
+
+.scale:hover{
+  transform: scale(1.1);
+}
+/* -------------- FIN DE HEADER & NAV ---------*/
+
+/* ------ BOTON PARA VOLVER A INICIO ---------*/
+.flecha-inicio {
+  height: 54px;
+  margin: 10px 19px;
+  float: right;
+}
+/* ------ BOTON PARA VOLVER A INICIO ---------*/
+
+
+/* ------------- PRESENTACIÓN ----------------*/
+
+/* ---------- FIN DE PRESENTACIÓN ------------*/
+
+
+/*------------------- COMIENZO DE NUESTRO BOX ------------------------*/
+#el-box{
+  background-image: url(../multimedia/dumbells.png);
+  background-size: cover;
+  background-position-y: center;
+  height: auto;
+}
+
+.titulo-nuestro-box{
+  color: var(--colorLinks);
+  font-size: var(--secundaryTitlesFont);
+}
+
+.video{
+  height: 600px;
+}
+
+.texto-box{
+  font-size: 30px;
+  color: var(--colorTextoNC);
+  
+}
+
+.titulo-nb2{
+  font-size: var(--secundaryTitlesFont);
+  color: var(--colorTextoNC);
+}
+/*------------------- FIN DE NUESTRO BOX ------------------------*/
+
+
+/* --------------------------- NUESTROS CHOACHES -------------------*/
+.profes{
+  background-image: url(../multimedia/discos.png);
+  background-size: cover;
+}
+
+.np{
+  color: var(--colorLinks);
+  font-size: var(--secundaryTitlesFont);
+}
+
+.bg-card{
+  background-color: var(--fondoGris);
+}
+
+.color-text-card{
+  color: var(--colorTextoNC);
+  font-size: 25px;
+}
+/* ---------------------- FIN DE NUESTROS CHOACHES -------------------*/
+
+
+/* --------------------- TIPOS DE ENTRENAMIENTOS --------------------*/
+.bg-tipos-de-entrenamientos{
+  background-image: url(../multimedia/Sambags-2.png);
+  background-size: cover;
+  background-position-y: bottom;
+  margin-bottom: -16px;
+}
+
+.tte{	
+  color: var(--colorLinks);
+  font-size: var(--secundaryTitlesFont);
+}
+
+.nombres-tp{
+  font-size: 50px;
+  color: var(--colorTextoNC);
+}
+
+.nombres-tp-2{
+  color: var(--colorTextoNC);
+  font-size: 50px;
+  margin-left: 12px;
+}
+
+
+.description-class{
+  color: var(--colorTextoNC);
+  font-size: 34px;
+  margin-left: 12px;
+}
+
+.icono-beneficios{
+  color: var(--colorLinks)
+}
+
+.beneficios-CF{
+  color: var(--colorTextoNC);
+  font-size: 24px;
+}
+
+.iframe-crossfit{
+  margin-left: 29px;
+}
+/* --------------------- FIN DE TIPOS DE ENTRENAMIENTOS -------------*/
+
+
+/* -------------------- ACERCATE A CONOCERNOS -----------------------*/
+#ubicacion{
+  background-image: url(../multimedia/img14.jpg);
+  background-size: cover;
+}
+
+.contacto{
+  font-size: 35px;
+  color: var(--colorLinks);
+}
+
+.nuestra-ubicacion{
+  font-size: var(--secundaryTitlesFont);
+  color: var(--colorLinks);
+}
+
+.texto-nu{
+  font-size: 35px;
+  color: var(--colorTextoNC)
+}
+
+.iframe-maps{
+  width: 100%;
+  margin-bottom: 5px;
+}
+/* ------------------- FIN DE ACERCATE A CONOCERNOS -----------------*/
+
+
+/* ----------------- RESPONSIVE ---------------------- */
+
+@media only screen and (max-width:576px){
+  height-576{
+  
+}
+
+@media only screen and (max-width:768px) {
+header {
+    position: fixed;
+    z-index: 1;
+  }
+  
+
+  #presentacion{
+  display: none;
+}
+
+/*------------------- COMIENZO DE NUESTRO BOX ------------------------*/
+.titulo-nuestro-box{
+  display: none;
+  }
+} 
+/* ----------------- FIN DE RESPONSIVE ---------------*/

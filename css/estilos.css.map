@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../scss/components/_presentacion.scss","../scss/components/_footer.scss","../scss/base/_variables.scss","../scss/base/_maps.scss","../scss/base/_mixins.scss"],"names":[],"mappings":"AAAA;EACI;EACH;EACA;EACA;;;ACFD;EACI,kBCHI;EDIJ;;AAEI;EACI;EACA;EACA,OCPH;;;ACET;EACI;;;ACCJ;EALI;EACA;EACA","file":"estilos.css"}

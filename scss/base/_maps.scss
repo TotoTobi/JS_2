@@ -1,0 +1,7 @@
+$font-description: (
+    hola: 17px solid #EDEDED,
+);
+
+.description{
+    font-size: map-get($font-description, hola );
+}

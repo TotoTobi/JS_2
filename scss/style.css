@@ -1,0 +1,28 @@
+#presentacion {
+  width: 100%;
+  height: auto;
+  background-image: url(../multimedia/img12.jpg);
+  background-size: cover;
+}
+
+.contain-footer {
+  background-color: #171717;
+  height: auto;
+}
+
+.contain-footer .style-footer {
+  text-decoration: none;
+  font-size: 25px;
+  color: #c3251d;
+}
+
+.description {
+  font-size: 17px solid #EDEDED;
+}
+
+.sass-bg-title {
+  width: 100%;
+  height: 111px;
+  background-color: #171717;
+}
+/*# sourceMappingURL=style.css.map */

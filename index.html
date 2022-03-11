@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>RKY CROSSFIT</title>
+    <!-- Icono -->
+    <link rel="icon" type="image/png" href="multimedia/img51.png">
+    <!-- Fin de Icono -->
+
+    <!--------------------------- ETIQ. METAS --------------------------------->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RKY Crossfit. Lugar de entrenamiento funcional, Crossfit, gimnastics, levantamiento olimpico de pesas con clases tambien de cardio y clases de estiramientos">
+    <meta name="keywords" content="rky, crossfit, crossfit en ciudad jardin, box, gimnastics, levantamiento olimpico, funcional, cardio, estiramiento, cardiovascular, musculacion, superarse, barras olimpicas, barras, dumbbell, brothers atletics, pull up, snacht, clean, capacidad pulmonar, ejercicio">
+            <!----- PROTOCOLO OPEN GRAPH ----->
+    <meta property="og:title" content="RKY CROSSFIT">
+    <meta property="og:image" content="data:image/png;base64,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"><!-------------- PONER URL DE LA IMG CUANDO ESTE SUBIDA -------->
+    <meta property="og:description" content="RKY CROSSFIT. Lugar de entrenamiento funcional, Crossfit, gimnastics, levantamiento olimpico de pesas con clases tambien de cardio y clases de estiramientos"> 
+    <meta property="og:author" content="Tobias Guglielminotti">
+            <!----- FIN DE PROTOCOLO OPEN GRAPH ----->
+    
+    <!-- ----------------------- FIN DE ETIQ. METAS --------------------------->
+    
+    <!----------------------------- FUENTES ---------------------------------------->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@300;400;500;800&display=swap" rel="stylesheet">
+    <!-----------------------------  FIN DE FUENTES ---------------------------------------->
+    
+    <!--------------------------- BOOTSTRAP --------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--------------------------- FIN DE BOOTSTRAP -------------------------------->
+
+    <!----------------------------- CCS ---------------------------------------->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <!----------------------------- FIN DE  CCS ---------------------------------------->
+</head>   
+
+<body>
+<!-- ======================= COMIENZO DEL HEADER =================== </--> 
+  <header id="header">
+      <div class="nav container-fluid ">
+        <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand scale text-white" href="#presentacion"><h1 class="fs-1 mx-5">RKY <span class="titulo">CROSSFIT</h1></span></a>
+          <button type="button" class="border-button navbar-toggler"  data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
+            <span class="navbar-toggler-icon button-hamburger"></span>
+          </button>
+          <div id="menuNavegacion" class="collapse navbar-collapse mx-5">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active fs-3 text-white scale" aria-current="page" href="#el-box">NUESTRO BOX</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-3 text-white scale" href="#coaches">NUESTRO EQUIPO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-3 text-white scale" href="#tde">TIPOS DE ENTRENAMIENTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-3 text-white scale" href="#ubicacion">NUESTRA UBICACIÓN</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+<!-- ======================= FINALIZACION DEL HEADER=================== </-->
+
+<!-- ====================== PRESENTACIÓN ============================== </-->
+  <section id="presentacion">
+      <article class="container-fluid"> 
+        <div class="row justify-content-center">
+          <div class="col-md-10 d-md-flex">
+            <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="multimedia/pizarronFuncional.png" class="d-block w-100  height-carousel " alt="imagen de una rutina en el pizarrón">
+                  </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="multimedia/parteNuevaEdit.png" class="d-block w-100 height-carousel" alt="imagen del box">
+                  </div>
+                <div class="carousel-item">
+                    <img src="multimedia/parteFuncional.png" class="d-block w-100 height-carousel" alt="imagen del box">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="multimedia/box1.png" class="d-block w-100 height-carousel" alt="imagen del box">
+                  </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+          </div>
+        </div>
+      </article>
+  </section>
+<!-- ====================== FIN DE PRESENTACIÓN ======================= </-->
+
+<!-- ======================= COMIENZO DE NUESTRO BOX ================== </-->
+  <section id="el-box">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="d-md-flex justify-content-center align-items-center sass-bg-title titulo-nuestro-box">
+          <p class="titulo-nuestro-box">El Lugar donde te vas superar</p>
+        </div>
+      </div>  
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-md-8 col-lg-12 d-md-flex justify-content-center">
+          <h3 class="titulo-nb2 mt-3">¿QUE NOS DIFERENCIA DEL RESTO?</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-7 col-xl-8 col-xxl-8">
+          <p class="texto-box">En <strong>RKY CROSSFIT</strong> te damos un trato 100% individualizado. 
+          Percibirás que tienes un entrenador de CrossFit personal solo para ti en cada clase. Ofrecemos una atención total en tus WOD's; los coaches te harán correcciones posturales y en técnica constantemente. En otros Box hay animadores, aquí somos entrenadores.</p>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-5 col-xl-4 col-xxl-4 d-flex align-content-center">
+          <video class="video" controls="" autoplay=""  loop="" poster="" title="video de un recorrido por las instalaciones de rky">
+          <source src="multimedia/videobox.mp4" type="video/mp4">
+        </div>  
+        
+      </div>
+    </div>
+  </section>
+<!-- ======================= FINALIZA NUESTRO BOX ================== </-->
+
+<!-- ======================= NUESTROS COACHES ================== </-->
+  <section id="coaches" class="">
+    <div class="container-fluid"> 
+      <div class="row ">
+        <div class="d-md-flex justify-content-center align-items-center sass-bg-title text-center-768">
+            <h2 class="np">Nuestros Profesores</h2>
+        </div>
+      </div>
+    </div>    
+  </section>
+
+  <section class="container-fluid profes">
+    <div class="container-fluid mt-4 "> 
+      <div class="row g-4"> 
+        <div class="col-sm-9 col-md-11 d-md-flex justify-content-center col-lg-6">
+          <div class="card w-75">
+            <img class="card-img-top" src="multimedia/foto-santi-presentacion.png" alt="Foto del coach Santiago">
+            <div class="card-body bg-card">
+              <h5 class="card-title color-text-card text-center"><strong>SANTIAGO</strong></h5>
+              <p class="card-text color-text-card">Coach Crossfit, Functional Trainer e Instructor en Levantamiento Olímpico de pesas. Como coach en diferentes lugares siempre me describí como una persona atenta, enfocada en los movimientos complejos y adaptados que realiza cada uno/a al momento de aprender, disipando dudas, corrigiendo detalles que uno va incorporando poco a poco, sin dejar de lado la alegría, el acompañamiento y el cuidado en cada clase.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-9 col-md-11 d-md-flex justify-content-center col-lg-6">
+          <div class="card w-75">
+            <img class="card-img-top" src="multimedia/presentacion belu.png" alt="Foto de la coach Belen">
+            <div class="card-body bg-card">
+              <h5 class="card-title color-text-card text-center"><strong>BELEN</strong></h5>
+              <p class="card-text color-text-card">Coach de CrossFit,  levantamiento olimpico de pesas, musculación y funcional trainer.
+                Con esta linda profesión mi postura siempre fue y es, transmitir todos mis conocimientos hacia mis alumnos, lograr que aprendan, disfruten, y mejoren su calidad de vida.</p></div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div class="container-fluid mt-4 "> 
+      <div class="row g-4">
+        <div class="col-sm-9 col-md-11 d-md-flex justify-content-center col-lg-6 mb-4">
+          <div class="card w-75">
+            <img class="card-img-top" src="multimedia/Emi presentacion.png" alt="Foto del coach Emiliano">
+            <div class="card-body bg-card">
+              <h5 class="card-title color-text-card"><strong>EMILIANO</strong></h5>
+              <p class="card-text color-text-card">Entrenador Funcional y EWC-L1 (ENADE) ,Preparador Fisico General (EAC TULUKA).</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-9 col-md-11 d-md-flex justify-content-center col-lg-6 mb-4">
+          <div class="card w-75">
+            <img class="card-img-top" src="multimedia/Pablito presentacion.png" alt=" Foto del coach Pablo">
+            <div class="card-body bg-card">
+              <h5 class="card-title color-text-card"><strong>PABLO</strong></h5>
+              <p class="card-text color-text-card">Mi primer contacto con el CrossFit fue jugando al fútbol donde hacíamos sesiones de entrenamiento de alta intensidad, después al encontrarlo aquí en RKY Crossfit decidí probarlo y una vez probado decidí especializarme en el sector del Crossfit.
+                Me encanta mejorar y aprender día a día para poder dar un mejor servicio, me llena mucho ver a las personas contentas, progresando y sobretodo mejorando su salud aquí con nosotros.
+                Practico al igual que enseño este deporte con pasión, ya que es una gran parte de mi vida.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ================== FINALIZA NUESTROS COACHES ================== </-->
+
+
+<!-- ======================= COMIENZO DE TIPOS DE ENTRENAMIENTOS ================== </-->
+  <section class="bg-tipos-de-entrenamientos"> 
+    <article id="tde"> 
+      <div class="container-fluid">
+        <div class="row">
+          <article class="d-md-flex justify-content-center align-items-center sass-bg-title text-center-768">
+            <h2 class="tte">Nuestras clases</h2>
+          </article> 
+        <div>
+      </div> 
+    </article>
+
+
+    <article>
+      <div class="container-fluid"> 
+        <div class="row">
+          <div class="col-sm-7 col-md-10 col-lg-12 d-flex justify-content-center">
+            <h2 class="nombres-tp-2 mt-3">Crossfit con Planificación de Brothers Atletics.</h2>
+          </div>
+        </div>
+      </div>
+      
+        
+      <div class="container-fluid"> 
+        <div class="row md-justify-content-center">
+          <div class="col-sm-7 col-md-7 col-lg-12 col-xl-12 col-xxl-12 d-flex justify-content-center">
+            <p class="description-class"><strong class="">CrossFit es un sistema de acondicionamiento físico basado en ejercicios constantemente variados, con movimientos funcionales junto a movimientos de levantamiento, ejecutados a alta intensidad, que nace en EEUU hace más de 10 años, de la mano de los mejores expertos en Fitness. El objetivo básico es el desarrollo de las siguientes capacidades físicas:</strong></p>
+          </div> 
+        </div>
+      </div> 
+
+        <div class="row">
+          <div class="col-sm-9 col-md-9 col-lg-12 d-flex justify-content-center">
+            <ul>
+                <li class="icono-beneficios"><p class="beneficios-CF"><strong>Cardiovascular y Respiratoria</strong></p></li>
+                <li class="icono-beneficios"><p class="beneficios-CF"><strong>Fuerza y Resistencia Muscular</strong></p></li>
+                <li class="icono-beneficios"><p class="beneficios-CF"><strong>Velocidad, Potencia y Agilidad</strong></p></li>
+                <li class="icono-beneficios"><p class="beneficios-CF"><strong>Coordinación, Equilibrio y Precisión</strong></p></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-9 col-lg-12 d-md-flex justify-content-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VeEQw2o8F5w" title="video de YouTube de que es CrossFit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="iframe-crossfit"></iframe>
+          </div>
+        </div>
+    </article>   
+      
+
+    <article> 
+      <div class="container-fluid mt-5">
+        <div class="row">
+          <div class="col-sm-3 col-md-8 col-lg-12 d-flex justify-content-center">
+            <h2 class="nombres-tp">FUNCIONAL</h2>
+          </div>
+        </div>  
+      </div>    
+       
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-7 col-md-8 col-lg-12 d-flex justify-content-center">
+            <p class="description-class"><strong>De las modas actuales en el mundo fitness es el entrenamiento funcional, un tipo de entrenamiento fundamentado en la biomecánica natural del cuerpo humano, que se compone de movimientos complejos y multi-articulares que trabajan las zonas superiores, inferiores y centrales (core) del cuerpo en cada ejercicio.</strong></p>
+          </div>
+        </div>  
+      </div>    
+      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-9 col-lg-12 d-md-flex justify-content-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/n6-UGb8wfD4" title="video de YouTube de que es Funcional" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>  
+      </div>             
+    </article>
+    
+    
+    <article>
+      <div class="container-fluid mt-5">
+        <div class="row">
+          <div class="col-sm-3 col-md-8 col-lg-12 d-flex justify-content-center">
+            <h2 class="nombres-tp">Open Box</h2>
+          </div>
+        </div>  
+      </div>
+      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-7 col-md-8 col-lg-12 col-xl-12 col-xxl-12 d-flex justify-content-center mb-4">
+              <p class="description-class"><strong>Durante los horarios de esta sección vas a poder ejercitarte de forma libre con tu planificación o poder practicar los ejercicios que nos cuesten en algunos momentos de nuestro entrenamiento. En estos horarios no podras contar con un profesor, ya que sera como hora libre.</strong></p>
+          </div>
+        </div>  
+      </div>
+    </article>    
+  </section>
+<!-- ======================= FINALIZACION DE TIPOS DE ENTRENAMIENTOS ================== </-->
+
+<!-- ======================= COMIENZO DE TIENDA ================== </-->
+  <section id="tienda">
+    <div class="container-fluid"> 
+      <div class="row">
+        <div class="d-md-flex justify-content-center align-items-center sass-bg-title text-center-768">
+            <h2 class="np">Nuestros Productos</h2>
+        </div>
+      </div>
+    </div> 
+  </section>
+
+  <section  class="nuestra-tienda container-fluid">
+    <article class="row">
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </article>
+
+    <article></article>
+    <article></article>
+  </section>
+<!-- ======================= FIN DE TIENDA ================= -->
+
+<!-- ====================== COMIENZO DE ACERCATE A CONOCERNOS ======================== </-->
+<section  id="ubicacion">
+    
+    <article class="container-fluid"> 
+      <div class="row">
+        <div class="d-md-flex justify-content-center align-items-center sass-bg-title text-center-768">
+          <h2 class="nuestra-ubicacion">NUESTRA UBICACIÓN</h2>
+        </div>
+      </div>
+    </article>
+
+    <article class="container-fluid"> 
+      <div class="row">
+        <div class="col-sm-8 col-md-10 col-lg-12 d-md-flex justify-content-center align-items-center m-3">
+          <p class="texto-nu"><strong>En RKY mantenemos el espíritu del CrossFit, somos un equipo, todos formamos parte del box. Así que no lo pienses más: ¡te estamos esperando!</strong></p>
+        </div>
+      </div>
+    </article>
+
+    <article class="container-fluid"> 
+      <div class="row g-3">
+        <div class="col-sm-8 col-md-10 col-lg-12 d-md-flex justify-content-center align-items-center m-3">
+          <p  class="texto-nu"><strong>Nos encontramos en el subsuelo del Gimnasio Cross en Av.Rosetti 6237, Ciudad Jardin Lomas del Palomar.</strong></p>
+        </div>
+      </div>
+    </article>
+
+    <article class="container-fluid"> 
+      <div class="row">
+        <div class="col-sm-8 col-md-10 col-lg-12 d-md-flex justify-content-center align-items-center">
+          <iframe class="iframe-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.9940119637486!2d-58.59525089539983!3d-34.604464345186315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9df81ea9b49%3A0xc86a899937e8adb9!2sRKY%20Fitness%20Club!5e0!3m2!1ses-419!2sar!4v1623376231996!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="ubicacion de google maps de rky" ></iframe>
+        </div>
+      </div>
+    </article>
+</section>
+<!-- ====================== FINALIZACIÓN DE ACERCATE A CONOCERNOS ==================== </-->
+
+
+<!-- ======================= COMIENZO DEL FOOTER=================== </-->
+  <footer>
+    <article class="container-fluid"> 
+      <div class="row contain-footer footer text-center-768">
+        <div class="col-sm-4 col-md-4 d-md-flex justify-content-center ">
+          <a href="http://www.instagram.com/rky.cf/?hl=es" class="style-footer">INSTRAGRAM</a>
+        </div>
+
+        <div class="col-sm-3 col-md-4 d-md-flex justify-content-center">
+          <a class="style-footer" href="https://www.waze.com/es-419/live-map/directions/argentina/provincia-de-buenos-aires/el-palomar/rky-fitness-club?to=place.ChIJSZvqgd-5vJURua3oN5mJasg" target="_blank">WAZE</a>
+        </div>
+
+        <div class="col-sm-5 col-md-4 d-md-flex justify-content-center">
+          <a class="style-footer" href="https://www.facebook.com/CrossCenterGym/" target="blank">FACEBOOK</a>
+        </div>
+      </div>
+    </article>  
+  </footer>
+<!-- ======================= FIN DEL FOOTER =================== </-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+  <script src="js/proyectoFinal.js"></script>
+</body>
+</html>

@@ -5,8 +5,6 @@ function productos (marca, nombre, description, talle, stock, valor) {
     this.talle = talle;
     this.stock = stock;
     this.valor = valor;
-
-    return nombre, talle, valor;
 };
 
 const zapatillaFuntional = new productos( `reebok`, `Zapatillas Nano X1 Grit`, ` Estas zapatillas Reebok de training para hombre están diseñadas para los entrenamientos más exigentes. El exterior tejido Flexweave® es liviano pero resistente. La amortiguación de espuma Floatride Energy en la parte delantera ofrece una sensación reactiva. El clip en el talón aporta estabilidad para movimientos laterales.`,`del 38 al 45`, 6, 25.999);
@@ -44,10 +42,8 @@ button.forEach((button) =>{
 
         const ValorEnTabla = document.getElementById("valor")
         let valorProducto = e.target.dataset.valor;
-        valorProducto.innerHTML += `<p>${valorProducto}</p>`;
+        ValorEnTabla.innerHTML += `<p>$${valorProducto}</p>`;
         carrito.push(e.target.dataset.valor);
-        // console.log(carrito)
-        // return {nombreProducto, valorProducto};
     })
 });
 

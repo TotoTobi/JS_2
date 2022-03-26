@@ -14,43 +14,39 @@
 <body>
     <section id="mostrador" class="d-flex  justify-content-center align-items-center mt-4"></section>
 
-    <section id="pintarCarrito" class="m-5 contain-fluid d-flex justify-content-center align-items-center mt-3">
-        <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Cantidad</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Valor</th>
-                <th scope="col">TOTAL</th>
-              </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row" id="cantidad"></th>
-                    <td id="nombre"></td>
-                    <td id="valor"></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td id="total">total</td>
-                </tr>
-            </tbody>
-            <!-- <tbody>
-              <tr>
-                
-              </tr>
-              <tr>
-                
-              </tr>
-              <tr>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-             -->
-          </table>
+    <section class="m-5 contain-fluid d-flex justify-content-center align-items-center ">
+      <ul class="list-group" id="pintarCarrito"></ul>
     </section>
+
+    <footer id="footer" class="container mt-3">
+      <template id="template-footer">
+        <section class="card">
+          <article class="card-body d-flex justify-content-between">
+            <p class="lead">Total: $<span></span></p>
+            <button class="btn btn-outline-primary"> Finalizar compra</button>
+          </article>
+        </section>
+      </template>
+      
+    </footer>
+
+    <template id="template">
+      <li class="list-group-item">
+        <span class="badgebg-primaryround-pill">12</span>
+        <span class="leads">remera</span>
+      </li>
+
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <div>
+          <p>Total: $<span class="lead mb-0"></span></p>
+        </div>
+
+        <div>
+          <button class="btn- btn-sm btn-danger">Quitar</button>
+          <button class="btn- btn-sm btn-success">Agregar</button>
+        </div>
+      </li>
+    </template>
 
     <script src="js/proyectFinalTwo.js"></script>
 </body>

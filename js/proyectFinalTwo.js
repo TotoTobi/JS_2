@@ -7,9 +7,9 @@ function productos (marca, nombre, description, talle, stock, valor) {
     this.valor = valor;
 };
 
-const zapatillaFuntional = new productos( `reebok`, `Zapatillas Nano X1 Grit`, ` Estas zapatillas Reebok de training para hombre están diseñadas para los entrenamientos más exigentes. El exterior tejido Flexweave® es liviano pero resistente. La amortiguación de espuma Floatride Energy en la parte delantera ofrece una sensación reactiva. El clip en el talón aporta estabilidad para movimientos laterales.`,`del 38 al 45`, 6, 25.999);
+const zapatillaFuntional = new productos(`Reebok`, `Zapatillas Nano X1 Grit`, ` Estas zapatillas Reebok de training para hombre están diseñadas para los entrenamientos más exigentes. El exterior tejido Flexweave® es liviano pero resistente. La amortiguación de espuma Floatride Energy en la parte delantera ofrece una sensación reactiva. El clip en el talón aporta estabilidad para movimientos laterales.`,`del 38 al 45`, 6, 25.999);
 
-const remeraGim = new productos(`reebok`, `Remera Workout Ready Melange`, `El tejido de jersey liviano jaspeado le da un look texturado. La tecnología Speedwick repele el sudor de tu piel para que puedas enfocarte en los trabajos de bíceps.`,`S, M ,L`, 13, 4.499);
+const remeraGim = new productos(`Reebok`, `Remera Workout Ready Melange`, `El tejido de jersey liviano jaspeado le da un look texturado. La tecnología Speedwick repele el sudor de tu piel para que puedas enfocarte en los trabajos de bíceps.`,`S, M ,L`, 13, 4.499);
 
 const articulos = [zapatillaFuntional, remeraGim];
 
@@ -24,28 +24,61 @@ articulos.forEach((productos) => {
             <span>TALLES:</span>
             <p class="card-text">${productos.talle}</p>
             <p class="card-text">$${productos.valor}</p>
-            <button id="btnAgregar" class="btn btn-primary" data-nombre="${productos.nombre}" data-valor=${productos.valor}>Agregar al carrito</button>
-        </div>
+            <button id="btnAgregar" class="btn btn-primary btn-agregar" data-nombre="${productos.nombre}" data-valor=${productos.valor}>Agregar al carrito</button>
+        </div> 
     </div>
     `
 });
 
+
+
+const buttonData = document.getElementById("btn-agregar");
+const verCarrito = document.getElementById("pintarCarrito");
+const template = document.getElementById("template");
+const footer = document.getElementById("footer");
+const templateFooter = document.getElementById("templateFooter");
+
 let carrito = [];
 
-const button = document.querySelectorAll("button");
-
-button.forEach((button) =>{
-    button.addEventListener("click",(e) =>{
-        const nombreEnTabla = document.getElementById("nombre");
-        let nombreProducto = e.target.dataset.nombre;
-        nombreEnTabla.innerHTML +=`<p>${nombreProducto}</p>`;
-
-        const ValorEnTabla = document.getElementById("valor")
-        let valorProducto = e.target.dataset.valor;
-        ValorEnTabla.innerHTML += `<p>$${valorProducto}</p>`;
-        carrito.push(e.target.dataset.valor);
-    })
+document.addEventListener("click", (e) => {
+    if(e.target.matches(".btn-agregar")){
+        agregarAlCarrito(e);
+    };
+      
 });
+
+const agregarAlCarrito = (e) => {
+
+    const producto = {
+        titulo: e.target.dataset.nombre,
+        id: e.target.dataset.nombre,
+        cantidad: 1,
+        precio: e.target.dataset.valor,
+    }
+
+    const indice = carrito.findIndex((item) => item.id === producto.id)
+
+    if (indice === -1) {
+        carrito.push(producto)
+    } else {
+        carrito[indice].cantidad++;
+        carrito[indice].precio = carrito[indice].cantidad * producto.precio;
+    };
+
+    console.log(carrito);
+
+    // pintarCarrito();
+};
+
+const pintarCarrito = () => {
+    carrito.textContent = "";
+
+    carrito.forEach((item) => {
+        const.clone = template.content.cloneNode(true);
+        clone.querySelector("")
+    })
+}
+
 
 
 // https://github.com/TotoTobi/js-2

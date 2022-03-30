@@ -33,8 +33,9 @@ articulos.forEach((productos) => {
 
 
 const buttonData = document.getElementById("btn-agregar");
-const verCarrito = document.getElementById("pintarCarrito");
+const pintarCarrito = document.getElementById("pintarCarrito");
 const template = document.getElementById("template");
+const fragment = document.createDocumentFragment();
 const footer = document.getElementById("footer");
 const templateFooter = document.getElementById("templateFooter");
 
@@ -59,26 +60,35 @@ const agregarAlCarrito = (e) => {
     const indice = carrito.findIndex((item) => item.id === producto.id)
 
     if (indice === -1) {
-        carrito.push(producto)
+        carrito.push(producto);
+
+        
+        
     } else {
         carrito[indice].cantidad++;
         carrito[indice].precio = carrito[indice].cantidad * producto.precio;
     };
 
-    console.log(carrito);
 
-    // pintarCarrito();
+
+    console.log(carrito);
 };
 
-const pintarCarrito = () => {
+const mostrarCarrito = () => {
     carrito.textContent = "";
 
-    carrito.forEach((item) => {
-        const.clone = template.content.cloneNode(true);
-        clone.querySelector("")
-    })
-}
+    carrito.forEach(() => {
+        const clone = template.content.cloneNode(true);
+        clone.getElementById("verNombre").textContent = [indice].item.nombre;
+        clone.getElementById("verCantidad").textContent = [indice].item.cantidad;
+        clone.getElementById("verTotal").textContent = [indice].item.precio * item.cantidad;
 
+        fragment.appendChild(clone);
+    
+    });
+    pintarCarrito.appendChild(fragment);
+};
 
+mostrarCarrito();
 
 // https://github.com/TotoTobi/js-2

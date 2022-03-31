@@ -69,26 +69,24 @@ const agregarAlCarrito = (e) => {
         carrito[indice].precio = carrito[indice].cantidad * producto.precio;
     };
 
-
-
     console.log(carrito);
+    mostrarCarrito(indice);
+
 };
 
 const mostrarCarrito = () => {
     carrito.textContent = "";
 
-    carrito.forEach(() => {
-        const clone = template.content.cloneNode(true);
-        clone.getElementById("verNombre").textContent = [indice].item.nombre;
-        clone.getElementById("verCantidad").textContent = [indice].item.cantidad;
-        clone.getElementById("verTotal").textContent = [indice].item.precio * item.cantidad;
+    carrito.forEach((item) => {
+        const clone = template.cloneNode(true);
+        clone.querySelector(".verNombre").textContent = item.nombre;
+        clone.querySelector(".verCantidad").textContent = item.cantidad;
+        clone.querySelector(".verTotal").textContent = item.precio * item.cantidad;
 
         fragment.appendChild(clone);
     
     });
     pintarCarrito.appendChild(fragment);
 };
-
-mostrarCarrito();
 
 // https://github.com/TotoTobi/js-2
